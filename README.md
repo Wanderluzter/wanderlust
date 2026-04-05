@@ -1,6 +1,6 @@
 # Wanderlust
 
-To wander off into a binary seas.
+To wander off into binary seas.
 
 ## In development.
 
