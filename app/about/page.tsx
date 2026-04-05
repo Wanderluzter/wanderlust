@@ -1,16 +1,73 @@
 //Página sobre Wanderlust
 export default function About() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">About Wanderlust</h1>
-      <p className="mt-4 text-lg text-gray-600">
-        Wanderlust is a travel blog dedicated to sharing inspiring stories,
-        tips, and guides for adventurers around the world. Our mission is to
-        ignite the spirit of exploration and encourage people to discover new
-        places, cultures, and experiences. Whether you're a seasoned traveler or
-        just starting your journey, Wanderlust is here to fuel your passion for
-        travel and help you forge ahead on your next adventure.
-      </p>
+    <div className="min-h-screen flex flex-col bg-black text-white font-mono">
+      {/* Header */}
+      <header className="bg-black border-b border-gray-600 shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <h2 className="text-2xl font-bold text-white tracking-wider">
+              WANDERLUST
+            </h2>
+            <nav className="space-x-8">
+              <a
+                href="/"
+                className="text-gray-400 hover:text-white transition-colors duration-300 uppercase text-sm"
+              >
+                Home
+              </a>
+              <a
+                href="/about"
+                className="text-gray-400 hover:text-white transition-colors duration-300 uppercase text-sm"
+              >
+                About
+              </a>
+              <a
+                href="/contact"
+                className="text-gray-400 hover:text-white transition-colors duration-300 uppercase text-sm"
+              >
+                Contact
+              </a>
+              <a
+                href="/posts"
+                className="text-gray-400 hover:text-white transition-colors duration-300 uppercase text-sm"
+              >
+                Posts
+              </a>
+              <a
+                href="/gallery"
+                className="text-gray-400 hover:text-white transition-colors duration-300 uppercase text-sm"
+              >
+                Gallery
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <main className="flex-grow flex items-center justify-center bg-black">
+        <div className="text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="text-6xl font-extrabold text-white mb-6 tracking-widest">
+            ABOUT
+          </h1>
+          <p className="text-lg text-gray-500 max-w-lg mx-auto uppercase tracking-wide">
+            Wanderlust is a travel blog dedicated to sharing inspiring stories,
+            tips, and guides for adventurers around the world. Our mission is to
+            ignite the spirit of exploration and encourage people to discover
+            new places, cultures, and experiences.
+          </p>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-black border-t border-gray-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-center text-gray-600 uppercase text-sm">
+            &copy; 2023 Wanderlust. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
